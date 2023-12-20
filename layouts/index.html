@@ -17,6 +17,7 @@
             {{ end }}
 
             <footer>
+                <a role="button" class="readmore secondary" href="{{ .RelPermalink }}">{{ i18n "readMore" }}</a>
                 <div class="date">
                     <time datetime="{{ .PublishDate }}">{{ i18n "publishDate" . }}</time>  
                 </div>
