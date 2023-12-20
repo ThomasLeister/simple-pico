@@ -43,11 +43,6 @@ postsNewer:
 postsOlder:
   other: Oudere posts
 
-poweredBy:
-  other: >-
-    Gemaakt met <a href='http://www.gohugo.io/'>Hugo</a> Thema door <a
-    href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
-
 publishDateShort:
   other: >-
     {{ .PublishDate.Day }} {{ index $.Site.Data.months_nl (printf "%d" .PublishDate.Month) }}

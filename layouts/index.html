@@ -7,19 +7,21 @@
     {{ range $paginator.Pages }}
         {{ $title := .Title }}
         {{ $summary := .Summary }}
-        <section class="item">
-          <div>
-            <h1 class="title"><a href='{{ .RelPermalink }}'>{{ $title }}</a></h1>
-            <div class ="date">
-                <time datetime="{{ .PublishDate }}">{{ i18n "publishDate" . }}</time>  
-            </div>
-          </div>
+        <article>
+            <header>
+                <h1><a href='{{ .RelPermalink }}'>{{ $title }}</a></h1>
+            </header>
 
-          {{ if ne .Site.Params.hiddenPostSummaryInHomePage true }}
+            {{ if ne .Site.Params.hiddenPostSummaryInHomePage true }}
               <div class="summary">{{ $summary | plainify | htmlUnescape }}</div>
-          {{ end }}
+            {{ end }}
 
-        </section>
+            <footer>
+                <div class="date">
+                    <time datetime="{{ .PublishDate }}">{{ i18n "publishDate" . }}</time>  
+                </div>
+            </footer>
+        </article>
     {{ end }}
 
     {{ if or ($paginator.HasPrev) ($paginator.HasNext) }}

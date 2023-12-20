@@ -41,10 +41,5 @@ postsNewer:
 postsOlder:
   other: Äldre inlägg
 
-poweredBy:
-  other: >-
-    Drivs med hjälp av <a href='http://www.gohugo.io/'>Hugo</a> Tema av <a
-    href='https://github.com/nodejh/hugo-theme-mini'>nodejh</a>
-
 publishDateShort:
   other: '{{ .PublishDate.Format "02.01." }}'

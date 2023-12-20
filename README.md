@@ -1,3 +1,14 @@
+# Hugo Theme "simple-pico"
+
+This is a modified version of hugo-theme-mini by nodejh.
+It was changed to use Pico.css to match the donate.650thz.de style.
+
+
+
+Original README:
+
+----
+
 # Hugo Theme Mini
 
 English | [简体中文](https://github.com/nodejh/hugo-theme-mini/tree/master/README-zh_CN.md)
@@ -85,7 +96,6 @@ Default is `en`. Now support:
 - `nl`: Dutch 
 - `fr`: French
 - `es`: Spanish
-- `da`: Danish
 
 More about multiple languages: [Multilingual Mode](https://gohugo.io/content-management/multilingual/).
 
